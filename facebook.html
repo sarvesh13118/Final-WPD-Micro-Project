@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodie - Facebook</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 60%;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+      }
+      .header img {
+        width: 80px;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+      .header h2 {
+        margin: 0;
+      }
+      .stats {
+        color: gray;
+      }
+      .post {
+        background: #fff;
+        padding: 15px;
+        margin-top: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+      .post img {
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+      .actions {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+      }
+      .actions button {
+        background: none;
+        border: none;
+        color: #1877f2;
+        cursor: pointer;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="logo2.jpg" alt="Foodie Logo" />
+        <div>
+          <h2>Foodie</h2>
+          <p class="stats">500K Followers &middot; 100 Posts</p>
+        </div>
+      </div>
+
+      <!-- Sample Post -->
+      <div class="post">
+        <h3>Foodie</h3>
+        <p>Craving something delicious? Check out this amazing burger! 🍔🤤</p>
+        <img src="burger1.jpg" alt="Burger" />
+        <div class="actions">
+          <button><i class="fas fa-thumbs-up"></i> Like</button>
+          <button><i class="fas fa-comment"></i> Comment</button>
+          <button><i class="fas fa-share"></i> Share</button>
+        </div>
+      </div>
+
+      <div class="post">
+        <h3>Foodie</h3>
+        <p>Nothing beats a cheesy pizza! 🍕🔥</p>
+        <img src="pizza1.jpg" alt="Pizza" />
+        <div class="actions">
+          <button><i class="fas fa-thumbs-up"></i> Like</button>
+          <button><i class="fas fa-comment"></i> Comment</button>
+          <button><i class="fas fa-share"></i> Share</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

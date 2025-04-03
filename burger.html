@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodie | Burgers</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f3f3f3;
+      }
+      .main-header {
+        background: #04f685;
+        color: white;
+        padding: 10px 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .logo img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav ul li {
+        margin-left: 20px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+      nav ul li a:hover {
+        color: #f3f3f3;
+        text-decoration: underline;
+      }
+      .page-title {
+        background: #04f685;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        font-size: 28px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+      }
+      .burger-container {
+        max-width: 900px;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+      .burger-item {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        padding: 15px 0;
+      }
+      .burger-item img {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+        margin-right: 20px;
+      }
+      .burger-info {
+        flex: 1;
+      }
+      .burger-info h2 {
+        color: #04f685;
+        margin: 0 0 10px;
+      }
+      .burger-info p {
+        font-size: 16px;
+        color: #555;
+        margin: 0 0 10px;
+      }
+      .burger-info .price {
+        font-size: 18px;
+        font-weight: bold;
+        color: #27ae60;
+      }
+      .order-btn {
+        display: inline-block;
+        background: #04f685;
+        color: white;
+        text-align: center;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background 0.3s ease;
+      }
+      .order-btn:hover {
+        background: #04f685;
+      }
+      footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 30px 0;
+        margin-top: 40px;
+      }
+      .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .social-links {
+        margin: 20px 0;
+      }
+      .social-links a {
+        color: white;
+        margin: 0 10px;
+        font-size: 20px;
+        text-decoration: none;
+      }
+      .copyright {
+        font-size: 14px;
+        color: #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <div class="logo">
+          <img src="logo2.jpg" alt="Foodie logo" />
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="burgers.html">Burgers</a></li>
+            <li><a href="pizza.html">Pizza</a></li>
+            <li><a href="fastfood.html">Fast Food</a></li>
+            <li><a href="beverages.html">Beverages</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="cart.html">cart</a></li>
+            <li><a href="bill.html">Bill</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="page-title">Burgers</div>
+
+    <div class="burger-container">
+      <div class="burger-item">
+        <img src="burger1.jpg" alt="Juicy Cheeseburger" />
+        <div class="burger-info">
+          <h2>Juicy Cheeseburger</h2>
+          <p>
+            Premium beef, fresh lettuce, tomato, cheese, and a special secret
+            sauce.
+          </p>
+          <span class="price">$8.99</span>
+          <a href="order.html" class="order-btn">Order Now</a>
+        </div>
+      </div>
+      <div class="burger-item">
+        <img src="burger4.jpg" alt="Spicy BBQ Burger" />
+        <div class="burger-info">
+          <h2>Spicy BBQ Burger</h2>
+          <p>
+            Grilled beef patty with smoky BBQ sauce, jalapeños, and crispy
+            onions.
+          </p>
+          <span class="price">$9.49</span>
+          <a href="order.html" class="order-btn">Order Now</a>
+        </div>
+      </div>
+      <div class="burger-item">
+        <img src="burger2.jpg" alt="Veggie Delight Burger" />
+        <div class="burger-info">
+          <h2>Veggie Delight Burger</h2>
+          <p>
+            Loaded with fresh veggies, a grilled plant-based patty, and herb
+            mayo.
+          </p>
+          <span class="price">$7.99</span>
+          <a href="order.html" class="order-btn">Order Now</a>
+        </div>
+      </div>
+      <div class="burger-item">
+        <img src="burger3.jpg" alt="Double Patty Melt" />
+        <div class="burger-info">
+          <h2>Double Patty Melt</h2>
+          <p>
+            Two juicy beef patties, melted cheese, and a toasted brioche bun.
+          </p>
+          <span class="price">$10.99</span>
+          <a href="order.html" class="order-btn">Order Now</a>
+        </div>
+      </div>
+      <div class="burger-item">
+        <img src="burger4.jpg" alt="Classic Chicken Burger" />
+        <div class="burger-info">
+          <h2>Classic Chicken Burger</h2>
+          <p>
+            Crispy fried chicken, lettuce, tomato, and tangy garlic aioli sauce.
+          </p>
+          <span class="price">$8.49</span>
+          <a href="order.html" class="order-btn">Order Now</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="logo"><img src="logo2.jpg" alt="Foodie logo" />Foodie</div>
+        <div class="social-links">
+          <a href="facebook.html"><i class="fab fa-facebook"></i></a>
+          <a href="twitter.html"><i class="fab fa-twitter"></i></a>
+          <a href="instagram.html"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="copyright">&copy; 2023 Foodie. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <!-- Font Awesome for icons (you'll need to add this in head for actual icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </body>
+</html>

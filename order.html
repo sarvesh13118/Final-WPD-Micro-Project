@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie | Order</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo2.jpg" alt="Foodie Logo">
+                <span>Foodie</span>
+            </div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+                <li><a href="bill.html">Bill</a></li>
+                <li><a href="#" class="btn">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="order-header">
+        <div class="order-header-content">
+            <h1>Burger King</h1>
+            <div class="restaurant-meta">
+                <div class="rating">
+                    <span class="stars">★★★★☆</span>
+                    <span>4.1 (1,200+ ratings)</span>
+                </div>
+                <p>American • Fast Food • Burgers</p>
+                <div class="delivery-info">
+                    <span><i class="fas fa-clock"></i> 25 min</span>
+                    <span><i class="fas fa-dollar-sign"></i> $10 for two</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="order-container">
+        <div class="menu-categories">
+            <h3>Categories</h3>
+            <ul>
+                <li class="active">Recommended</li>
+                <li>Burgers</li>
+                <li>Meals</li>
+                <li>Sides</li>
+                <li>Beverages</li>
+                <li>Desserts</li>
+            </ul>
+        </div>
+
+        <div class="menu-items">
+            <h2>Recommended</h2>
+            
+            <div class="menu-section">
+                <h3>Burgers</h3>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h4>Whopper</h4>
+                        <p class="price">$5.99</p>
+                        <p class="description">Our signature Whopper with flame-grilled beef, fresh toppings</p>
+                    </div>
+                    <div class="item-add">
+                        <img src="whopper.jpg" alt="Whopper">
+                        <button class="add-to-cart" data-item="Whopper" data-price="5.99">Add +</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h4>Cheeseburger</h4>
+                        <p class="price">$3.99</p>
+                        <p class="description">Classic cheeseburger with American cheese</p>
+                    </div>
+                    <div class="item-add">
+                        <img src="cheese.jpg" alt="Cheeseburger">
+                        <button class="add-to-cart" data-item="Cheeseburger" data-price="3.99">Add +</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-section">
+                <h3>Sides</h3>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h4>French Fries</h4>
+                        <p class="price">$2.49</p>
+                        <p class="description">Golden crispy fries with just the right amount of salt</p>
+                    </div>
+                    <div class="item-add">
+                        <img src="fries.jpg" alt="French Fries">
+                        <button class="add-to-cart" data-item="French Fries" data-price="2.49">Add +</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-section">
+                <h3>Beverages</h3>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h4>Orange Juice</h4>
+                        <p class="price">$1.99</p>
+                        <p class="description">Freshly squeezed orange juice</p>
+                    </div>
+                    <div class="item-add">
+                        <img src="juice1.jpg" alt="Orange Juice">
+                        <button class="add-to-cart" data-item="Orange Juice" data-price="1.99">Add +</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Foodie</h3>
+                <p>Discover the best food around you at the most affordable prices.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Foodie. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                const itemName = this.getAttribute('data-item');
+                const itemPrice = this.getAttribute('data-price');
+                
+                // In a real app, you would add this to a cart array or send to server
+                let cartCount = parseInt(document.querySelector('.cart-count').textContent);
+                document.querySelector('.cart-count').textContent = cartCount + 1;
+                
+                // Show added notification
+                const notification = document.createElement('div');
+                notification.className = 'notification';
+                notification.textContent = `${itemName} added to cart`;
+                document.body.appendChild(notification);
+                
+                setTimeout(() => {
+                    notification.remove();
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>

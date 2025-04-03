@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie | Your Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo2.jpg" alt="Foodie Logo">
+                <span>Foodie</span>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="bill.html">Bill</a></li>
+                <li><a href="#" class="btn">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="cart-header">
+        <h1>Your Cart</h1>
+        <p>Review your order before checkout</p>
+    </section>
+
+    <section class="cart-container">
+        <div class="cart-items">
+            <div class="restaurant-info">
+                <h3>Burger King</h3>
+                <p>25 min • $10 for two</p>
+            </div>
+
+            <div class="cart-item">
+                <div class="item-details">
+                    <h4>Whopper</h4>
+                    <p class="price">$5.99</p>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn">-</button>
+                        <span class="quantity">1</span>
+                        <button class="quantity-btn">+</button>
+                    </div>
+                </div>
+                <div class="item-image">
+                    <img src="whopper.jpg" alt="Whopper">
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <div class="item-details">
+                    <h4>Cheeseburger</h4>
+                    <p class="price">$3.99</p>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn">-</button>
+                        <span class="quantity">2</span>
+                        <button class="quantity-btn">+</button>
+                    </div>
+                </div>
+                <div class="item-image">
+                    <img src="cheese.jpg" alt="Cheeseburger">
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <div class="item-details">
+                    <h4>French Fries</h4>
+                    <p class="price">$2.49</p>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn">-</button>
+                        <span class="quantity">1</span>
+                        <button class="quantity-btn">+</button>
+                    </div>
+                </div>
+                <div class="item-image">
+                    <img src="fries.jpg" alt="French Fries">
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <h3>Order Summary</h3>
+            <div class="summary-row">
+                <span>Item Total</span>
+                <span>$16.46</span>
+            </div>
+            <div class="summary-row">
+                <span>Delivery Fee</span>
+                <span>$2.99</span>
+            </div>
+            <div class="summary-row">
+                <span>Taxes</span>
+                <span>$1.23</span>
+            </div>
+            <div class="summary-row total">
+                <span>Total</span>
+                <span>$20.68</span>
+            </div>
+            <button class="btn checkout-btn" onclick="window.location.href='bill.html'">Proceed to Checkout</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Foodie</h3>
+                <p>Discover the best food around you at the most affordable prices.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Foodie. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

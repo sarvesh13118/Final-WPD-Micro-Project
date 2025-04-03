@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodie | Beverages</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f3f3f3;
+      }
+      .main-header {
+        background: #04f685;
+        color: white;
+        padding: 10px 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .logo img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav ul li {
+        margin-left: 20px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+      nav ul li a:hover {
+        color: #f3f3f3;
+        text-decoration: underline;
+      }
+      .page-title {
+        background: #04f685;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        font-size: 28px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+      }
+      .beverage-container {
+        max-width: 900px;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+      .beverage-item {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        padding: 15px 0;
+      }
+      .beverage-item img {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+        margin-right: 20px;
+        object-fit: cover;
+      }
+      .beverage-info {
+        flex: 1;
+      }
+      .beverage-info h2 {
+        color: #04f685;
+        margin: 0 0 10px;
+      }
+      .beverage-info p {
+        font-size: 16px;
+        color: #555;
+        margin: 0 0 10px;
+      }
+      .beverage-info .price {
+        font-size: 18px;
+        font-weight: bold;
+        color: #27ae60;
+      }
+      .order-btn {
+        display: inline-block;
+        background: #04f685;
+        color: white;
+        text-align: center;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background 0.3s ease;
+      }
+      .order-btn:hover {
+        background: #04c96d;
+      }
+      footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 30px 0;
+        margin-top: 40px;
+      }
+      .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .social-links {
+        margin: 20px 0;
+      }
+      .social-links a {
+        color: white;
+        margin: 0 10px;
+        font-size: 20px;
+        text-decoration: none;
+      }
+      .copyright {
+        font-size: 14px;
+        color: #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <div class="logo">
+          <img src="logo2.jpg" alt="Foodie logo" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="burgers.html">Burgers</a></li>
+            <li><a href="pizza.html">Pizza</a></li>
+            <li><a href="beverages.html" class="active">Beverages</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="bill.html">Bill</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="page-title">Beverages</div>
+
+    <div class="beverage-container">
+      <div class="beverage-item">
+        <img src="cola.jpg" alt="Classic Cola" />
+        <div class="beverage-info">
+          <h2>Classic Cola</h2>
+          <p>Refreshing cola with the perfect balance of sweetness and fizz.</p>
+          <span class="price">$2.99</span>
+          <a href="order.html" class="order-btn">Order Now</a>
+        </div>
+      </div>
+      <div class="beverage-item">
+        <img src="coffe.jpg" alt="Iced Coffee" />
+        <div class="beverage-info">
+          <h2>Iced Coffee</h2>
+          <p>Smooth cold brew coffee with milk and your choice of sweetener.</p>
+          <span class="price">$3.99</span>
+          <a href="order.html" class="order-btn">Order Now</a>
+        </div>
+      </div>
+      <div class="beverage-item">
+        <img src="lemon.jpg" alt="Fresh Lemonade" />
+        <div class="beverage-info">
+          <h2>Fresh Lemonade</h2>
+          <p>
+            Homemade lemonade with freshly squeezed lemons and natural
+            sweetener.
+          </p>
+          <span class="price">$3.49</span>
+          <a href="order.html" class="order-btn">Order Now</a>
+        </div>
+      </div>
+      <div class="beverage-item">
+        <img src="milkshake.jpg" alt="Strawberry Milkshake" />
+        <div class="beverage-info">
+          <h2>Strawberry Milkshake</h2>
+          <p>
+            Creamy milkshake made with real strawberries and vanilla ice cream.
+          </p>
+          <span class="price">$4.99</span>
+          <a href="order.html" class="order-btn">Order Now</a>
+        </div>
+      </div>
+      <div class="beverage-item">
+        <img src="water.jpg" alt="Mineral Water" />
+        <div class="beverage-info">
+          <h2>Mineral Water</h2>
+          <p>
+            Natural mineral water with essential electrolytes for hydration.
+          </p>
+          <span class="price">$1.99</span>
+          <a href="order.html" class="order-btn">Order Now</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="logo"><img src="logo2.jpg" alt="Foodie logo" />Foodie</div>
+        <div class="social-links">
+          <a href="facebook.html"><i class="fab fa-facebook"></i></a>
+          <a href="twitter.html"><i class="fab fa-twitter"></i></a>
+          <a href="instagram.html"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="copyright">&copy; 2023 Foodie. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </body>
+</html>

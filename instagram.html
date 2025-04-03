@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodie - Instagram</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      .container {
+        width: 50%;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+      }
+      .profile-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .profile-header img {
+        width: 100px;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+      .bio {
+        margin-top: 10px;
+      }
+      .stats {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 10px;
+      }
+      .stats div {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 20px;
+      }
+      .gallery img {
+        width: 100%;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile-header">
+        <img src="logo2.jpg" alt="Foodie Logo" />
+        <div>
+          <h2>Foodie</h2>
+          <p class="bio">
+            🍔 Discover the best food & drinks 🍕 | Order your favorites now! 🚀
+          </p>
+          <div class="stats">
+            <div>50 Posts</div>
+            <div>500K Followers</div>
+            <div>10 Following</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <img src="burger1.jpg" alt="Burger" />
+        <img src="pizza1.jpg" alt="Pizza" />
+        <img src="juice1.jpg" alt="Pasta" />
+        <img src="noodles.jpg" alt="Noodles" />
+        <img src="header.jpg" alt="Dessert" />
+        <img src="juice.png" alt="Coffee" />
+      </div>
+    </div>
+  </body>
+</html>

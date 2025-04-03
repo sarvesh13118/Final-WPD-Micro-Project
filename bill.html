@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie | Order Confirmation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo2.jpg" alt="Foodie Logo">
+                <span>Foodie</span>
+            </div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="#" class="btn">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="bill-container">
+        <div class="bill-success">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h1>Order Placed Successfully!</h1>
+            <p>Your order from Burger King is on its way</p>
+            <p class="order-id">Order ID: #FOOD12345</p>
+            <button class="btn" onclick="window.location.href='index.html'">Back to Home</button>
+        </div>
+
+        <div class="bill-details">
+            <h2>Order Details</h2>
+            <div class="restaurant-info">
+                <h3>Burger King</h3>
+                <p>Estimated Delivery: 25 min</p>
+            </div>
+
+            <div class="order-items">
+                <div class="order-item">
+                    <span>1x Whopper</span>
+                    <span>$5.99</span>
+                </div>
+                <div class="order-item">
+                    <span>2x Cheeseburger</span>
+                    <span>$7.98</span>
+                </div>
+                <div class="order-item">
+                    <span>1x French Fries</span>
+                    <span>$2.49</span>
+                </div>
+            </div>
+
+            <div class="bill-summary">
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span>$16.46</span>
+                </div>
+                <div class="summary-row">
+                    <span>Delivery Fee</span>
+                    <span>$2.99</span>
+                </div>
+                <div class="summary-row">
+                    <span>Taxes</span>
+                    <span>$1.23</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span>$20.68</span>
+                </div>
+            </div>
+
+            <div class="delivery-info">
+                <h3>Delivery Address</h3>
+                <p>123 Main Street, Apt 4B</p>
+                <p>New York, NY 10001</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+
+            <div class="payment-info">
+                <h3>Payment Method</h3>
+                <p>Credit Card ending in 4242</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Foodie</h3>
+                <p>Discover the best food around you at the most affordable prices.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Foodie. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
