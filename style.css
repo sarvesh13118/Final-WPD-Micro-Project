@@ -3,9 +3,9 @@
 /* ==================== */
 :root {
   /* Color Palette */
-  --primary: #04f685;
-  --primary-dark: #03d674;
-  --primary-light: rgba(4, 246, 133, 0.1);
+  --primary: #f81e1e;
+  --primary-dark: #e90d0d;
+  --primary-light: rgba(246, 4, 4, 0.1);
   --secondary: #ff6b6b;
   --secondary-dark: #ff5252;
   --accent: #667eea;
@@ -241,20 +241,20 @@ img {
 /* HEADER & NAVIGATION */
 /* ==================== */
 header {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(0, 0, 0, 0.39);
   box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgb(255, 0, 0);
   transition: var(--transition);
 }
 
 .header-scrolled {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 0, 0, 0.95);
 }
 
 nav {
@@ -264,6 +264,10 @@ nav {
   padding: 15px 5%;
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.logom{
+  color: #000000;
 }
 
 .logo {
@@ -280,7 +284,7 @@ nav {
   height: 42px;
   margin-right: 12px;
   transition: var(--transition);
-  filter: drop-shadow(0 2px 5px rgba(4, 246, 133, 0.3));
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.595));
 }
 
 .logo:hover {
@@ -342,13 +346,13 @@ nav ul li a.active {
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(4, 246, 133, 0.4);
+    box-shadow: 0 0 0 0 rgba(246, 24, 4, 0.4);
   }
   70% {
-    box-shadow: 0 0 0 10px rgba(4, 246, 133, 0);
+    box-shadow: 0 0 0 10px rgba(246, 4, 4, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(4, 246, 133, 0);
+    box-shadow: 0 0 0 0 rgba(246, 4, 4, 0);
   }
 }
 
@@ -378,8 +382,8 @@ nav ul li a.active {
 /* HERO SECTION */
 /* ==================== */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../images/burger.jpg");
+   background: linear-gradient(rgba(0, 0, 0, 0.11), rgb(255, 0, 0)),
+    url("../images/burger.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -389,7 +393,7 @@ nav ul li a.active {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 0 20px;
   position: relative;
   overflow: hidden;
@@ -419,11 +423,11 @@ nav ul li a.active {
   margin-bottom: 20px;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   line-height: 1.2;
-  background: linear-gradient(to right, white, #e0f7fa);
+  background: linear-gradient(to right, rgb(255, 0, 0), #000000);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: gradientShift 8s ease infinite;
+  animation: gradientShift 15s ease infinite;
   background-size: 200% 200%;
 }
 
@@ -442,8 +446,9 @@ nav ul li a.active {
 .hero-content p {
   font-size: 1.3rem;
   margin-bottom: 40px;
+  color: rgb(0, 0, 0);
   opacity: 0.9;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.63);
 }
 
 .search-bar {
@@ -452,16 +457,16 @@ nav ul li a.active {
   margin: 0 auto;
   border-radius: 50px;
   overflow: hidden;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.415);
   transition: var(--transition);
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.462);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.645);
 }
 
 .search-bar:hover {
   transform: translateY(-5px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.741);
 }
 
 .search-bar input {
@@ -471,17 +476,17 @@ nav ul li a.active {
   font-size: 1rem;
   outline: none;
   background: transparent;
-  color: white;
+  color: rgb(255, 0, 0);
 }
 
 .search-bar input::placeholder {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 0, 0, 0.8);
 }
 
 .search-bar button {
   padding: 20px 35px;
   background: var(--gradient-primary);
-  color: white;
+  color: rgb(0, 0, 0);
   border: none;
   cursor: pointer;
   font-size: 1rem;
@@ -493,7 +498,7 @@ nav ul li a.active {
 }
 
 .search-bar button:hover {
-  background: linear-gradient(135deg, var(--primary-dark), #02b563);
+  background: linear-gradient(135deg, var(--primary-dark), #f02207);
 }
 
 /* ==================== */
@@ -506,13 +511,12 @@ nav ul li a.active {
 .category-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
-  gap: 30px;
+  gap: 50px;
   perspective: 1000px;
 }
 
 .category-card {
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -552,17 +556,17 @@ nav ul li a.active {
 }
 
 .category-card:hover img {
-  transform: scale(1.1) translateZ(30px);
+  transform: scale(1.2) translateZ(30px);
 }
 
 .category-card h3 {
   position: absolute;
   bottom: 30px;
   left: 30px;
-  color: white;
+  color: rgb(255, 0, 0);
   font-size: 1.8rem;
   z-index: 2;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 2px 10px rgba(255, 0, 0, 0.867);
   transform: translateZ(30px);
 }
 
@@ -571,7 +575,7 @@ nav ul li a.active {
 /* ==================== */
 .featured {
   padding: 100px 5%;
-  background-color: white;
+  background-color: rgb(255, 0, 0);
   position: relative;
 }
 
@@ -588,7 +592,7 @@ nav ul li a.active {
 .featured-item {
   display: flex;
   align-items: center;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   border-radius: var(--border-radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -652,7 +656,7 @@ nav ul li a.active {
 
 .price:hover {
   transform: scale(1.05);
-  background: rgba(4, 246, 133, 0.2);
+  background: rgba(246, 4, 4, 0.744);
 }
 
 .original {
